@@ -1,40 +1,40 @@
 # Unity-Extensions
 
-Some useful Unity extensions methods that I collect and wrote over the time.
+Here are some useful Unity extension methods that I have collected and written over time.
 
 ## Collider Extensions
 #### GetRandomPointInsideCollider()
-In a box collider, returns a random Vector3 point in world space.
+Returns a random Vector3 point in world space within a box collider.
 
 ## Float Extensions
 #### Remap()
-Remaps the value of given float with minimum and maximum value to target minumum and maximum value.
+Remaps the value of a given float from a source range (minimum and maximum) to a target range (minimum and maximum).
 #### RotationNormalizedDeg()
-Returns the normalized degree to given rotation.
+Returns the normalized degree value of a given rotation.
 #### RotationNormalizedRad()
-Returns the normalized radian to given rotation.
+Returns the normalized radian value of a given rotation.
 
 ## GameObject Extensions
 #### GetOrAddComponent()
-If the given component exists in a gameObject returns the component, if it's not, AddComponent and return later.
+Returns the component if it exists on the game object, or adds the component and returns it.
 #### HasComponent()
-Is given component exist on gameObject?
+Checks if a given component exists on the game object.
 #### DestroyChildren()
-In a given gameObject, destroys all children of it.
+Destroys all children of a given game object.
 
 ## Image Extensions
 #### Fade()
-Change the alpha value of the image.
+Modifies the alpha value of the image to achieve a fade effect.
 
 ## List Extensions
 #### Shuffle()
-Shuffle's the given list using Fisher-Yates algoritm
+Shuffles the elements of a given list using the Fisher-Yates algorithm.
 #### GetRandomElement()
 Returns a random element in a list.
 
 ## Rigidbody Extensions
 #### Freeze()
-For both in 2D and 3D rigidbodies, freezes the object with setting it's velocities to zero and isKinematics' to true.
+Freezes the object by setting its velocities to zero and enabling kinematic mode for both 2D and 3D rigidbodies.
 
 ## Transform Extentions
 #### ResetTransform()
@@ -42,7 +42,7 @@ Reset's the transforms position, rotation and scale.
 
 ## Vector Extensions
 #### AddX(), AddY() and AddZ()
-Only adds value to the vector's given axis for both Vector3 and Vector2 structs.
+Modifies the corresponding axis of a Vector3 or Vector2 struct while keeping the other axes unchanged.
 
 #### WithX(), WithY() and WithZ()
 Only changes the vector's given axis for both Vector3 and Vector2 structs.
